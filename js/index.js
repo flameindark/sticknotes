@@ -135,7 +135,7 @@ app.util = {
 	}
 
 	Note.prototype.close = function() {
-		document.body.removeChild(this.note);
+		$('.note-wrap').removeChild(this.note);
 		store.delete(this.note.id);
 	};
 	
